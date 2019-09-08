@@ -28,6 +28,7 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
 
   return (
+    // dynamically set head of HTML easily with react-helmet
     <Helmet
       htmlAttributes={{
         lang,
