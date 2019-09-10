@@ -1,24 +1,29 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from "gatsby"
-
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import styles from "./NavBar.module.css";
 
 const NavBar = props => {
   return (
-    <nav>
+    <nav className={styles.navbar}>
       <ul>
-        <li><Link>Home</Link></li>
-        <li><Link>Bio</Link></li>
-        <li><Link>Contact</Link></li>
-        <li><Link>Blog!</Link></li>
+        <li>
+          <Link>Home</Link>
+        </li>
+        <li>
+          <Link>Bio</Link>
+        </li>
+        <li>
+          <Link>Contact</Link>
+        </li>
+        <li>
+          <Link>Blog!</Link>
+        </li>
       </ul>
-
     </nav>
-  )
-}
+  );
+};
 
-NavBar.propTypes = {
+NavBar.propTypes = {};
 
-}
-
-export default NavBar
+export default NavBar;

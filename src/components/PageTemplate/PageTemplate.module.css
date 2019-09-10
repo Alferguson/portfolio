@@ -1,0 +1,33 @@
+.pageTemp {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 200px 6fr 1fr;
+  margin: auto;
+  width: 80%;
+}
+
+/* header occupies top right grid */
+.pageTemp>header {
+  grid-column: 2;
+  grid-row: 1;
+  margin-right: -20px;
+}
+
+/* NavBar occupies left grid (basically a sidebar) */
+.pageTemp>nav {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 10px;
+}
+
+/* body occupies middle right grid */
+.pageTemp>main {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* footer occupes bottom grid */
+.pageTemp>footer {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}

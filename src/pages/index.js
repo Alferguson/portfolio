@@ -1,28 +1,22 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import React from "react";
+import { graphql } from "gatsby";
+import Bio from "../components/bio";
+import PageTemplate from "../components/PageTemplate";
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const { data } = this.props;
+    const siteTitle = data.site.siteMetadata.title;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        
+      <PageTemplate>
         <Bio />
-        
-      </Layout>
-    )
+      </PageTemplate>
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -47,4 +41,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
