@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "../NavBar";
 import styles from "./PageTemplate.module.css";
+import "typeface-slabo-27px";
+import "typeface-staatliches";
 
 // Wraps every page with header, navbar, and footer
 // Main contains actual page components
 const PageTemplate = props => {
-  const { location, title, children } = props;
-  console.log(props);
+  const { children } = props;
   return (
     <div className={styles.pageTemp}>
       <header>

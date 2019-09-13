@@ -2,4 +2,6 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.2rem;
 }

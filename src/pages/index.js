@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Bio from "../components/bio";
+import Bio from "../components/Bio";
 import PageTemplate from "../components/PageTemplate";
 
 class BlogIndex extends React.Component {

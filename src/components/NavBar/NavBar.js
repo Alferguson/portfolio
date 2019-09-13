@@ -8,16 +8,13 @@ const NavBar = props => {
     <nav className={styles.navbar}>
       <ul>
         <li>
-          <Link>Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link>Bio</Link>
+          <Link to="contact">Contact</Link>
         </li>
         <li>
-          <Link>Contact</Link>
-        </li>
-        <li>
-          <Link>Blog!</Link>
+          <Link to="blog">Blog!</Link>
         </li>
       </ul>
     </nav>

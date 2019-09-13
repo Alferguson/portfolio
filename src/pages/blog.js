@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link, graphql } from "gatsby";
 
-import Bio from "../components/bio";
-import Layout from "../components/layout";
+import Bio from "../components/Bio";
+import PageTemplate from "../components/PageTemplate";
 import SEO from "../components/seo";
 import { rhythm } from "../utils/typography";
 
@@ -13,9 +13,8 @@ class BlogIndex extends Component {
     const posts = data.allMarkdownRemark.edges;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <PageTemplate location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
@@ -38,7 +37,7 @@ class BlogIndex extends Component {
             </div>
           );
         })}
-      </Layout>
+      </PageTemplate>
     );
   }
 }
