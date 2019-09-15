@@ -1,20 +1,17 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Bio from "../components/Bio";
+import SEO from "../components/seo";
 import PageTemplate from "../components/PageTemplate";
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
-
-    return (
-      <PageTemplate>
-        <Bio />
-      </PageTemplate>
-    );
-  }
-}
+const BlogIndex = () => {
+  return (
+    <PageTemplate>
+      <SEO title="Home" />
+      <Bio />
+    </PageTemplate>
+  );
+};
 
 export default BlogIndex;
 

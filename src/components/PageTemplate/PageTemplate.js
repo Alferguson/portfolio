@@ -12,6 +12,7 @@ const PageTemplate = props => {
     <div className={styles.pageTemp}>
       <header>
         <h1>John Alexander Ferguson</h1>
+        <hr></hr>
       </header>
       <Navbar />
       <main>{children}</main>
